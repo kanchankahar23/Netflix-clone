@@ -177,12 +177,50 @@ html{
 }
 .Questions{
    height: 80vh;
-  background-color: pink;
+ 
   margin-top: 10rem;
 }
-.FAQ{
-  
+.Questions h1{
+  margin-left: 10rem;
+  padding: 40px 10px;
 }
+ .faq-container {
+        max-width: 1300px;
+      
+        padding-left: 10rem;
+    }
+    .faq-item {
+        background-color: #222;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .faq-question {
+        padding: 23px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+    }
+    .faq-question::after {
+        content: "+";
+        position: absolute;
+        right: 20px;
+        font-size: 20px;
+    }
+    .faq-answer {
+        display: none;
+        padding: 15px;
+        background-color: #333;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .faq-item.active .faq-answer {
+        display: block;
+    }
+    .faq-item.active .faq-question::after {
+        content: "-";
+    }
 
 /* responsive */
 @media (max-width: 1024px) {
