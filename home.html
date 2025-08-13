@@ -120,12 +120,62 @@
             </div>
 
         </section>
+        <footer>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email">
+                <input class="email-address" type="email" placeholder="Email Address">
+                 <button class="getstarted">Get started</button>
+            </div>
+
+           <p>Questions? Call 000-800-919-1743</p>
+            <div class="info">
+                
+                <div class="last">
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Investor Relations</li>
+                        <li>Privacy</li>
+                        <li>Speed Test</li>
+                    </ul>
+                </div>
+                <div class="last">
+                    <ul>
+                        <li> Help Centre</li>
+                        <li> Jobs </li>
+                        <li> Cookie Preferences</li>
+                        <li> Legal Notices</li>
+                    </ul>
+                </div>
+                <div class="last">
+                    <ul>
+                        <li>Account</li>
+                        <li>Ways to Watch</li>
+                        <li>Corporate Information</li>
+                        <li> Only on Netflix </li>
+                    </ul>
+                </div>
+                <div class="last">
+                    <ul>
+                        <li>Media Centre</li>
+                        <li> Terms of Use </li>
+                        <li>Contact Us</li>
+
+                    </ul>
+                </div>
+            </div>
+            <select name="language" id="language">
+                <option value="english">자 English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+
+            <p>Netflix India</p>
+            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</p>
+        </footer>
 
 </body>
 <script>
     document.querySelectorAll('.faq-question').forEach(q => {
         q.addEventListener('click', () => {
-            // Close other FAQs before opening clicked one
             document.querySelectorAll('.faq-item').forEach(item => {
                 if (item !== q.parentElement) {
                     item.classList.remove('active');
