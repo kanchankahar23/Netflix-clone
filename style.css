@@ -331,7 +331,7 @@ html {
 footer {
   width: 100%;
   text-align: center;
-  height: 84vh;
+  height: 87vh;
   margin: 80px 80px;
 }
 
@@ -401,7 +401,7 @@ footer .info li {
   font-size: 0.91rem;
   text-align: left;
   color: rgb(144, 143, 143);
-cursor: pointer;
+  cursor: pointer;
 }
 
 footer .call {
