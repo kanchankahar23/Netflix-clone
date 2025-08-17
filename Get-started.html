@@ -7,12 +7,60 @@
     <title>Netflix-clone</title>
 </head>
 <style>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       font-family:  sans-serif;
+    }
+
+    .container {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 120px 0px 120px;
+    }
+
+    .container .right-section .logo {
+        width: 150px;
+        height: auto;
+        margin-right: 100px;
+    }
+
+    .container .right-section .logo img {
+        width: 180px;
+        height: auto;
+        padding-left: 1rem;
+    }
+
+    .sign-in {
+        border: 0;
+        outline: 0;
+        padding: 5px;
+        background-color: white;
+        color: black;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+
+    }
+
+    .middle-section {
+       padding: 40px;
+        max-width: 500px;
+        display: flex;
+        height: 60vh;
+        flex-direction: column;
+        
+    }
 </style>
 
 <body>
@@ -23,72 +71,78 @@
             </div>
         </div>
         <div class="left-section">
-       <button class="sign-in">Sign In</button>
+            <button class="sign-in">Sign In</button>
         </div>
+
     </div>
-    <div class="middle-section">
-        <p>step 1 of 3</p>
-        <h1>Welcome back!</h1>
-        <h1>Joining Netflix is easy</h1>
-        <p>Enter your password and you'll be watching in no time.</p>
-        <p>Email</p>
-        <h2>kaharkanchan884@gmail.com</h2>
-        <div class="password">
-            <input type="password" placeholder=" Password ">
+    <hr>
+    <main>
+        <div class="middle-section">
+            <p>step 1 of 3</p>
+            <h1>Welcome back!</h1>
+            <h1>Joining Netflix is easy</h1>
+            <p>Enter your password and you'll be watching in no time.</p>
+            <p>Email</p>
+            <h2>kaharkanchan884@gmail.com</h2>
+            <div class="password">
+                <input type="password" placeholder=" Password ">
+            </div>
+            <p>Forgot your password?</p>
+            <div class="next">
+                <button class="next">Next</button>
+
+            </div>
         </div>
-        <p>Forgot your password?</p>
-        <div class="next">
-            <button class="next">Next</button>
-        </div>
-    </div>
+    </main>
     <div class="footer">
-          <p class="call">Questions? Call 000-800-919-1743</p>
-            <div class="info">
+        <p class="call">Questions? Call 000-800-919-1743</p>
+        <div class="info">
 
-                <div class="last">
-                    <ul>
-                        <li>FAQ</li>
-                        <li>Investor Relations</li>
-                        <li>Privacy</li>
-                        <li>Speed Test</li>
-                    </ul>
-                </div>
-                <div class="last">
-                    <ul>
-                        <li> Help Centre</li>
-                        <li> Jobs </li>
-                        <li> Cookie Preferences</li>
-                        <li> Legal Notices</li>
-                    </ul>
-                </div>
-                <div class="last">
-                    <ul>
-                        <li>Account</li>
-                        <li>Ways to Watch</li>
-                        <li>Corporate Information</li>
-                        <li> Only on Netflix </li>
-                    </ul>
-                </div>
-                <div class="last">
-                    <ul>
-                        <li>Media Centre</li>
-                        <li> Terms of Use </li>
-                        <li>Contact Us</li>
-
-                    </ul>
-                </div>
+            <div class="last">
+                <ul>
+                    <li>FAQ</li>
+                    <li>Investor Relations</li>
+                    <li>Privacy</li>
+                    <li>Speed Test</li>
+                </ul>
             </div>
-            <select name="language" id="language">
-                <option value="english">자 English</option>
-                <option value="Hindi">Hindi</option>
-            </select>
-            <div class="Netflix-india">
-
-                <p>Netflix India</p>
-                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</p>
+            <div class="last">
+                <ul>
+                    <li> Help Centre</li>
+                    <li> Jobs </li>
+                    <li> Cookie Preferences</li>
+                    <li> Legal Notices</li>
+                </ul>
             </div>
+            <div class="last">
+                <ul>
+                    <li>Account</li>
+                    <li>Ways to Watch</li>
+                    <li>Corporate Information</li>
+                    <li> Only on Netflix </li>
+                </ul>
+            </div>
+            <div class="last">
+                <ul>
+                    <li>Media Centre</li>
+                    <li> Terms of Use </li>
+                    <li>Contact Us</li>
+
+                </ul>
+            </div>
+        </div>
+        <select name="language" id="language">
+            <option value="english">자 English</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+        <div class="Netflix-india">
+
+            <p>Netflix India</p>
+            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</p>
+        </div>
         </footer>
 
 </body>
 <script src="script.js"></script>
+
 </html>

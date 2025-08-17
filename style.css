@@ -9,7 +9,7 @@
 body {
   background: radial-gradient(circle at top, #1a0a0a, #000000 70%);
   color: white;
-  max-width: min-content;
+
 }
 
 html {
@@ -302,7 +302,6 @@ html {
 @media (max-width: 1024px) {
   .navigation {
     height: auto;
-    flex-direction: column;
     padding: 10px;
   }
 
